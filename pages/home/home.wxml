@@ -1,0 +1,2 @@
+<!--pages/home/home.wxml-->
+<bar barInfo="{{barInfo}}" barclass="bg" bindSearch="bindSearch" id="bar"/>
