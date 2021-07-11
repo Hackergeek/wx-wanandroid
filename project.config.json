@@ -40,7 +40,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.18.0",
-  "appid": "wx07efe1186d58978e",
+  "appid": "",
   "projectname": "WanAndroid",
   "debugOptions": {
     "hidedInDevtools": []

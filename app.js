@@ -18,8 +18,6 @@ App({
 
   getMenuInfo: function() {
     let menuInfo = wx.getMenuButtonBoundingClientRect();
-    console.log("胶囊按钮：", menuInfo);
-
     wx.getSystemInfo({
       success: res => {
         console.log(res);
