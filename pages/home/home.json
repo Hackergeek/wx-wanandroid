@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "bar":"/components/bar/bar"
+    "bar":"/components/bar/bar",
+    "swiper":"/components/swiper/swiper",
+    "article":"/components/article/article"
   },
+  "enablePullDownRefresh": true,
   "navigationStyle": "custom"
 }

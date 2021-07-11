@@ -1,2 +1,6 @@
 <!--pages/home/home.wxml-->
 <bar barInfo="{{barInfo}}" barclass="bg" bindSearch="bindSearch" id="bar"/>
+<view style="padding-top:{{barInfo.height}}px">
+  <swiper banner="{{banner}}" />
+  <article articleList="{{articleList}}"/>
+</view>
