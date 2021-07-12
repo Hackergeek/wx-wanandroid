@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "navi-right":"/components/navi-right/navi-right"
+  },
+  "navigationBarTitleText": "导航"
 }

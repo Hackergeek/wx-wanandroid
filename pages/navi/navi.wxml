@@ -1,2 +1,13 @@
 <!--pages/navi/navi.wxml-->
-<text>pages/navi/navi.wxml</text>
+<view class="top-line"></view>
+<view class="navi">
+  <scroll-view class="navi-left" scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-into-view="{{toIndex}}">
+    <view class="navi-left-name" wx:for="{{naviData}}" wx:key="index" bindtap="bindName" data-index="{{index}}" style="{{index == selectIndex? 'background:#e6e6e6;color:#fe6243':''}}" id="to{{index}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+  <view class="line"></view>
+  <scroll-view class="navi-right" scroll-y="{{true}}">
+    <navi-right hotKeyList="{{naviData[selectIndex].articles}}" bindkey="bindTitle"></navi-right>
+  </scroll-view>
+</view>

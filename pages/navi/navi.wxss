@@ -1,1 +1,35 @@
 /* pages/navi/navi.wxss */
+
+.top-line {
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  position: fixed;
+}
+
+.navi {
+  display: flex;
+  height: 100%;
+}
+
+.navi-left {
+  width: 280rpx;
+  margin-top: 1px;
+}
+
+.navi-left-name {
+  font-size: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+
+.navi-right {
+  margin-top: 1px;
+}
+
+.line {
+  width: 8px;
+  background: #e6e6e6;
+  height: 100%;
+}

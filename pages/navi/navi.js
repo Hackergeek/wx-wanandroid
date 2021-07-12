@@ -1,18 +1,65 @@
 // pages/navi/navi.js
+
+const api = require('../../api/api.js');
+const app = getApp();
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    naviData:[],
+    selectIndex:0,
+    toIndex: ''
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    this.requestNavi()
+  },
 
+  requestNavi:function() {
+    api.navi().then(res=> {
+      this.data.naviData = res.data;
+      api.friend().then(res => {
+        let list = [];
+        res.data.forEach(item=> {
+          list.push( {
+            link: item.link,
+            title: item.name
+          })
+        })
+        this.data.naviData.unshift({
+          articles:list,
+          name:"热门网站"
+        })
+        this.setData({
+          naviData:this.data.naviData
+        })
+      })
+    })
+  },
+
+  bindName: function(event) {
+    console.log(event)
+    let index = event.currentTarget.dataset.index;
+    let toIndex = '';
+    if(index >= 4) {
+      toIndex  = `to${index - 4}`;
+    }
+    this.setData({
+      selectIndex:index,
+      toIndex:toIndex
+    });
+  },
+
+  bindTitle:function(event) {
+    let link = event.detail.dataset.link;
+    wx.navigateTo({
+      url: '/pages/web/web?url=' + link,
+    })
   },
 
   /**
