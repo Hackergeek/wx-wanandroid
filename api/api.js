@@ -23,7 +23,7 @@ let register = (param) => baseAPI.request("POST", '/user/register', param);
 let login = (param) => baseAPI.request("POST", '/user/login', param);
 
 // 退出登录 --- https://www.wanandroid.com/user/logout/json
-let unlogin = () => baseAPI.request("GET", '/user/logout/json');
+let logout = () => baseAPI.request("GET", '/user/logout/json');
 
 // 收藏文章列表 --- https://www.wanandroid.com/lg/collect/list/0/json 参数： 页码：拼接在链接中，从0开始。
 let collectList = (pageNum) => baseAPI.request("GET", `/lg/collect/list/${pageNum}/json`);
@@ -63,7 +63,7 @@ module.exports = {
   projectListData,
   register,
   login,
-  unlogin,
+  logout,
   collectList,
   uncollect,
   articleUncollect,

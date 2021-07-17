@@ -29,6 +29,18 @@
           "pathName": "pages/project/project",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
         }
       ]
     }
