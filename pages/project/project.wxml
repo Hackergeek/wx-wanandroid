@@ -1,2 +1,15 @@
 <!--pages/project/project.wxml-->
-<text>pages/project/project.wxml</text>
+<wxs src="../../app.wxs" module="app"/>
+<view class="project">
+  <scroll-view class="category" scroll-x="{{true}}" scroll-left="{{scrollLeft}}" scroll-with-animation="{{true}}">
+    <view wx:for="{{category}}" wx:key="index" class="category-item {{index==swiperIndex?'active':''}}" bindtap="bindCategory" data-index="{{index}}">{{app.charConvert(item.name)}}</view>
+  </scroll-view>
+  <swiper class="project-swiper" bindchange="bindSwiperChange" current="{{swiperIndex}}">
+   <swiper-item wx:for="{{projectList}}" wx:key="index">
+    <scroll-view class="project-list" scroll-y="{{true}}" bindscrolltolower="bindLoadMore">
+      <project articleList="{{item}}"></project>
+    </scroll-view>
+   </swiper-item>
+  </swiper>
+
+</view>
