@@ -33,3 +33,11 @@
   background: #e6e6e6;
   height: 100%;
 }
+
+.button-border{ 
+  border: 1rpx solid #fe6243;
+}
+
+.hover {
+  background: #fe6243;
+}

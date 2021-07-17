@@ -4,8 +4,11 @@ Component({
    * Component properties
    */
   properties: {
-    hotKeyList:Object
+    hotKeyList:Object,
+    isTitle:Boolean
   },
+
+  externalClasses:['hover', 'button-border'],
 
   /**
    * Component initial data

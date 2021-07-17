@@ -4,7 +4,8 @@
     "pages/navi/navi",
     "pages/project/project",
     "pages/user/user",
-    "pages/web/web"
+    "pages/web/web",
+    "pages/search/search"
   ],
   "tabBar": {
     "color": "#666",

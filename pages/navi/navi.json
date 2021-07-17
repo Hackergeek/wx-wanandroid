@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "navi-right":"/components/navi-right/navi-right"
+    "flowlayout-button":"/components/flowlayout-button/flowlayout-button"
   },
   "navigationBarTitleText": "导航"
 }

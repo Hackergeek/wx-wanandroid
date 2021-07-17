@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "flowlayout-button":"/components/flowlayout-button/flowlayout-button",
+    "article":"/components/article/article"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "搜索"
+}

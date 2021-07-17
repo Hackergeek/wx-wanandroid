@@ -8,6 +8,7 @@
   </scroll-view>
   <view class="line"></view>
   <scroll-view class="navi-right" scroll-y="{{true}}">
-    <navi-right hotKeyList="{{naviData[selectIndex].articles}}" bindkey="bindTitle"></navi-right>
+    <flowlayout-button hotKeyList="{{naviData[selectIndex].articles}}" bindkey="bindTitle"  isTitle="{{true}}" button-border="button-border" hover="hover"></flowlayout-button>
+
   </scroll-view>
 </view>

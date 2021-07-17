@@ -55,6 +55,9 @@ Page({
 
   bindSearch: function(res) {
     console.log("搜索：", res);
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
   },
 
   /**
